@@ -1,0 +1,102 @@
+/* regole generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: lightblue;
+}
+
+/* regole header */
+
+/* nav */
+
+.top, .bottom{
+  width: 70%;
+  margin: auto;
+  /* debug */
+  height: 7.5vh;
+  background-color: red;
+}
+
+/* jumbotron */
+
+.jumbotron{
+  position: relative;
+  padding-top: 15vh;
+  height: 85vh;
+  /* debug */
+  background-color: pink;
+}
+
+.text-jumbotron{
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+.text-jumbotron div{
+  width: 40%;
+  margin-top: 10vh;
+  /* debug */
+  height: 80%;
+  background-color: red;
+}
+
+/* regole main */
+
+section:first-child{
+  margin-top: 15vh;
+}
+
+/* regole section card */
+
+#logo-container-card{
+  /* debug */
+  width: 50%;
+  height: 30vh;
+  margin: auto;
+  background-color: blue;
+}
+
+.container-card::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#container-card{
+  width: 70%;
+  margin: 5vh auto;
+}
+
+#card-top{
+  /* Debug */
+  height: 30vh;
+  background-color: blue;
+}
+
+.card{
+  float: left;
+  margin-top: 5vh;
+  /* debug */
+  width: 30%;
+  height: 70vh;
+  background-color: blue;
+}
+
+.card.center{
+  margin: 5vh 5%;
+}
+
+/* regole board */
+
+/* .board::after{
+  content: "";
+  display: table;
+  clear: both;
+} */
