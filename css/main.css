@@ -33,7 +33,9 @@ nav{
   /* debug */
   background-color: pink;
 }
-
+/* .text-jumbotron, .top, .bottom, #container-card, .board{
+  width: 70%; */
+}
 .text-jumbotron{
   width: 70%;
   height: 70%;
@@ -50,7 +52,7 @@ nav{
 /* regole main */
 
 section:first-child{
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 /* regole section card */
@@ -63,7 +65,7 @@ section:first-child{
   background-color: blue;
 }
 
-.container-card::after{
+#container-card::after{
   content: "";
   display: table;
   clear: both;
@@ -85,7 +87,7 @@ section:first-child{
   margin-top: 5vh;
   /* debug */
   width: 30%;
-  height: 70vh;
+  height: 60vh;
   background-color: blue;
 }
 
@@ -95,8 +97,52 @@ section:first-child{
 
 /* regole board */
 
-/* .board::after{
+.board::after{
   content: "";
   display: table;
   clear: both;
-} */
+}
+
+#container-board{
+  width: 100%;
+  height: 80vh;
+  background-color: lightblue;
+}
+
+.board{
+  width: 70%;
+  /* debug */
+  padding-top: 30vh;
+  margin: auto;
+}
+
+.box{
+  float: left;
+  /* debug */
+  width: calc(25% - 3px);
+  height: 20vh;
+  background-color: blue;
+}
+
+/* section customers */
+
+.customers-top, .customers-bottom{
+  /* debug */
+  width: 70%;
+  height: 30vh;
+  margin: 7.5vh auto;
+  background-color: blue;
+}
+
+/* section footer */
+
+footer{
+  background-color: darkgrey;
+}
+
+.info-footer{
+  width: 70%;
+  height: 50vh;
+  margin: auto;
+  background-color: grey;
+}
