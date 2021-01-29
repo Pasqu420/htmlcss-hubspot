@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 nav{
   width: 100%;
   position: fixed;
@@ -16,31 +20,42 @@ li{
   list-style: none;
 }
 
-header a{
+a{
   text-decoration: none;
+}
+
+.fas.fa-check-circle{
+  color: rgb(255,140,0)
+}
+
+header a{
   vertical-align: middle;
   color: inherit;
 }
 
 .link-style{
-  border: 1.5px solid orange;
-  padding: 1vh 1vw;
+  padding: 1.5vh 1vw;
   border-radius: 1vh;
 }
 
 .link-style.white{
+  border: 1.5px solid orange;
   background-color: white;
-  color: orange;
+  color: rgb(255,140,0);
   font-weight: bold;
 }
 
 .link-style.orange{
-  background-color: orange;
+  background-color: rgb(255,140,0);
   color: white;
   font-weight: bold;
 }
 
-hr{
+.link-style.orange:hover{
+  background-color: rgba(	255,140,0, 0.3);
+}
+
+header hr{
   width: 100%;
 }
 /* regole header */
@@ -48,7 +63,6 @@ hr{
 /* nav */
 
 .top, .bottom{
-  width: 70%;
   margin: auto;
   line-height: 7.5vh;
 }
@@ -93,11 +107,12 @@ li, img{
   background-size: cover;
 
 }
-/* .text-jumbotron, .top, .bottom, #container-card, .board, .info-footer{
-  width: 70%; */
+.text-jumbotron, .top, .bottom, #container-card, .board, .info-footer, .customers-top, .customers-bottom{
+  width: 70%;
+}
+
 
 .text-jumbotron{
-  width: 70%;
   margin: auto;
 }
 
@@ -112,27 +127,40 @@ li, img{
 }
 
 .text-jumbotron p{
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 
 .text-jumbotron p:last-child{
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 /* regole main */
 
 section:first-child{
-  margin-top: 10vh;
+  padding-top: 5vh;
+  background-color: rgba(	211,211,211, 0.2);
 }
 
 /* regole section card */
 
+#logo-container-card img{
+  width: 20vw;
+  height: 25vh;
+  object-fit: contain;
+}
+
+#logo-container-card div{
+  text-align: center;
+}
+
+#logo-container-card h2{
+  font-size: calc(1.5vw + 13px);
+  margin-bottom: 5%;
+}
+
 #logo-container-card{
-  /* debug */
   width: 50%;
-  height: 30vh;
   margin: auto;
-  background-color: blue;
 }
 
 #container-card::after{
@@ -142,27 +170,129 @@ section:first-child{
 }
 
 #container-card{
-  width: 70%;
   margin: 5vh auto;
 }
 
-#card-top{
-  /* Debug */
-  height: 30vh;
-  background-color: blue;
+/* top */
+
+#card-top::after{
+  content: "";
+  display: table;
+  clear: both;
 }
+
+#card-top{
+  background-color: rgb(255,255,255);
+}
+
+.card-top-left{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  float: left;
+}
+
+.img-card-top{
+  width: 10vw;
+  height: 20vh;
+}
+
+.card-top-left .link-style{
+  display: inline-block;
+  margin-bottom: 10%;
+}
+
+.card-top-right{
+  float: right;
+  width: 70%;
+}
+
+.card-top-right h3{
+  font-size: calc(1vw + 10px);
+  padding: 5% 0% 4% 0%;
+}
+
+.card-top-right p{
+  width: 60%;
+padding-bottom: 3%;
+}
+
+.popolar-feature h4, hr{
+  display: inline-block;
+  margin-right: 10%;
+  vertical-align: middle;
+}
+
+.popolar-feature hr{
+  width: 60%;
+  height: 3px;
+  background-color: black;
+}
+
+.popolar-feature{
+  padding-bottom: 3%;
+}
+
+.list-card li{
+  display: inline-block;
+  padding-right: 4%;
+}
+
+/* 3 card inferiori */
 
 .card{
   float: left;
   margin-top: 5vh;
-  /* debug */
+  text-align: center;
   width: 30%;
-  height: 60vh;
-  background-color: blue;
+  background-color: rgb(255,255,255);
 }
 
 .card.center{
   margin: 5vh 5%;
+}
+
+.card img{
+  width: 10vw;
+  height: 20vh;
+  margin-top: 5%;
+}
+
+.card h3{
+  font-size: calc(1vw + 10px);
+  padding: 5% 0%;
+}
+
+.card p{
+  width: 75%;
+  margin: auto;
+  padding: 5% 0%;
+}
+
+.card hr{
+  width: 75%;
+  height: 3px;
+  margin: auto;
+  background-color: black;
+}
+
+.card h4{
+  font-size: calc(0.6vw + 10px);
+  padding: 5% 0%;
+}
+
+.card li{
+  text-align: left;
+  padding-left: 10%;
+}
+
+.card .fas{
+  margin-right: 3%;
+}
+
+.card a{
+  display: inline-block;
+  margin: 10% auto;
 }
 
 /* regole board */
@@ -180,7 +310,7 @@ section:first-child{
 }
 
 .board{
-  width: 70%;
+  /* width: 70%; */
   /* debug */
   padding-top: 30vh;
   margin: auto;
@@ -198,7 +328,7 @@ section:first-child{
 
 .customers-top, .customers-bottom{
   /* debug */
-  width: 70%;
+  /* width: 70%; */
   height: 30vh;
   margin: 7.5vh auto;
   background-color: blue;
@@ -211,7 +341,7 @@ footer{
 }
 
 .info-footer{
-  width: 70%;
+  /* width: 70%; */
   height: 50vh;
   margin: auto;
   background-color: grey;
