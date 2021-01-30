@@ -307,7 +307,7 @@ padding-bottom: 3%;
   width: 100%;
   height: 95vh;
   text-align: center;
-  background-color: #00a4bd ;
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5) ;
 }
 
 .board{
@@ -366,20 +366,102 @@ padding-bottom: 3%;
 
 .box{
   float: left;
-  /* debug */
   width: calc(25% - 3px);
-  /* height: 20vh; */
-  /* background-color: blue; */
 }
 
 /* section customers */
 
 .customers-top, .customers-bottom{
-  /* debug */
-  /* width: 70%; */
-  height: 30vh;
   margin: 7.5vh auto;
-  background-color: blue;
+}
+
+.customers-top::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.customers-bottom::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* top */
+
+.info-customers{
+  float: left;
+}
+
+.info-customers{
+  width: 28%;
+  text-align: center;
+}
+
+.number-customers{
+  display: block;
+  font-size: calc(1.5vw + 20px);
+  font-weight: 900;
+  padding: 10% 0% 7% 0%;
+}
+
+li span{
+  font-weight: 800;
+}
+
+.info-customers li{
+  margin: 3% 0%;
+}
+
+.sponsor{
+  width: 70%;
+  margin: auto;
+  padding-top: 3.5%;
+}
+
+.sponsor div{
+  width: 20%;
+  float: left;
+  padding: 1% 0% 0% 1%;
+}
+
+.img-sponsor{
+  width: 7vw;
+  height: 5vh;
+  object-fit: contain;
+}
+
+/* bottom */
+
+.text-customers-bottom{
+  width: 35%;
+  float: left;
+}
+
+.text-customers-bottom h3{
+  font-size: calc(1vw + 15px);
+}
+
+.text-customers-bottom p{
+  padding: 8% 0% 13% 0%;
+}
+
+.text-customers-bottom p:last-child{
+  font-size: 85%;
+  padding-top: 10%;
+}
+
+.woman{
+  width: 65%;
+  float: left;
+}
+
+.img-customers-bottom{
+  width: 78%;
+  height: 78%;
+  padding-left: 40%;
+  position: relative;
+  bottom: 7vh;
 }
 
 /* section footer */
