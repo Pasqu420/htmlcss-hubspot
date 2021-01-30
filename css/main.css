@@ -305,23 +305,71 @@ padding-bottom: 3%;
 
 #container-board{
   width: 100%;
-  height: 80vh;
-  background-color: lightblue;
+  height: 95vh;
+  text-align: center;
+  background-color: #00a4bd ;
 }
 
 .board{
-  /* width: 70%; */
-  /* debug */
-  padding-top: 30vh;
+  padding-top: 5vh;
   margin: auto;
+}
+
+.board h2{
+ font-size: calc(1vw + 15px);
+ width: 50%;
+ margin: 2.5% auto;
+}
+
+.info-board{
+  margin-top: 7%;
+}
+
+.board p{
+  width: 50%;
+  margin: 2.5% auto;
+}
+
+.box.border{
+  border-right: 1px solid black;
+}
+
+.box.border-t-r{
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.box.border-t{
+  border-top: 1px solid black;
+}
+
+.box img{
+  padding-top: 8%;
+}
+
+.box .bold{
+  font-size: calc(1vw + 20px);
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.box span{
+  display: inline-block;
+  padding: 4.5% 0% 1% 0%;
+  vertical-align: middle;
+}
+
+.box p{
+  font-weight: bold;
+  margin-bottom: 15%;
 }
 
 .box{
   float: left;
   /* debug */
   width: calc(25% - 3px);
-  height: 20vh;
-  background-color: blue;
+  /* height: 20vh; */
+  /* background-color: blue; */
 }
 
 /* section customers */
