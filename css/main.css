@@ -36,19 +36,18 @@ header a{
 .link-style{
   padding: 1.5vh 1vw;
   border-radius: 1vh;
+  font-weight: bold;
 }
 
 .link-style.white{
   border: 1.5px solid orange;
   background-color: white;
   color: rgb(255,140,0);
-  font-weight: bold;
 }
 
 .link-style.orange{
   background-color: rgb(255,140,0);
   color: white;
-  font-weight: bold;
 }
 
 .link-style.orange:hover{
@@ -58,12 +57,17 @@ header a{
 header hr{
   width: 100%;
 }
+
+.top, .bottom, .text-jumbotron, #container-card, .board, .customers-top, .customers-bottom, .container-footer{
+  width: 70%;
+  margin: auto;
+}
+
 /* regole header */
 
 /* nav */
 
 .top, .bottom{
-  margin: auto;
   line-height: 7.5vh;
 }
 
@@ -107,13 +111,9 @@ li, img{
   background-size: cover;
 
 }
-.text-jumbotron, .top, .bottom, #container-card, .board, .info-footer, .customers-top, .customers-bottom{
-  width: 70%;
-}
-
 
 .text-jumbotron{
-  margin: auto;
+  /* margin: auto; */
 }
 
 .text-jumbotron div{
@@ -312,7 +312,6 @@ padding-bottom: 3%;
 
 .board{
   padding-top: 5vh;
-  margin: auto;
 }
 
 .board h2{
@@ -467,12 +466,123 @@ li span{
 /* section footer */
 
 footer{
-  background-color: darkgrey;
+  background-color: #2d3e50;
+  color: white;
 }
 
-.info-footer{
-  /* width: 70%; */
-  height: 50vh;
+footer a{
+  color: white;
+}
+
+.hover-style a:hover{
+  text-decoration: underline;
+  color: lightblue;
+}
+
+.column .fab:hover{
+  color: lightblue;
+}
+
+.info-footer::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.info-footer .column{
+  width: 25%;
+  padding-top: 2.5%;
+  float: left;
+}
+
+.column li:first-child{
+  margin-bottom: 8%;
+  font-weight: 900;
+}
+
+.info-footer li{
+  margin-bottom: 4.5%;
+}
+
+.link-style-support{
+  padding: 1vh 1vw;
+  border-radius: 1vh;
+  background-color: white;
+  color: #2d3e50;
+  display: inline-block;
+  margin: 1.5% 0%;
+}
+
+.link-style-support:hover{
+  background-color: rgba(255,255,255, 0.3)
+}
+
+footer .fab{
+  width: 14%;
+}
+
+.languages{
+  width: 50%;
   margin: auto;
-  background-color: grey;
+}
+
+.languages a:hover{
+  text-decoration: underline;
+  color: lightblue;
+}
+
+.languages li{
+  width: calc(100% / 6);
+  float: left;
+  margin-top: 10%;
+}
+
+footer hr{
+  width: 100%;
+  margin-bottom: 3%;
+  position: relative;
+  bottom: 2vh;
+}
+.copyright{
+  padding-bottom: 3vh;
+}
+
+.copyright::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.copyright div{
+  float: left;
+}
+
+.copyright li{
+  float: right;
+}
+
+.copyright li:last-child{
+  margin-right: 2%;
+}
+
+/* regole icona support */
+
+.support{
+  position: fixed;
+  z-index: 9;
+  right: 1.5vw;
+  bottom: 2vh;
+  border-radius: 50%;
+  background-color: rgb(66, 91, 118);
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.support .fas{
+  font-size: 2vw;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate( -50%, -50%);
 }
