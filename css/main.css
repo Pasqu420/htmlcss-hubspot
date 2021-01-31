@@ -557,6 +557,10 @@ footer hr{
   float: left;
 }
 
+.copyright p{
+  margin-top: 3%;
+}
+
 .copyright li{
   float: right;
 }
